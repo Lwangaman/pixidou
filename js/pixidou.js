@@ -500,7 +500,8 @@ pixidou = {
 		pixidou.imageHeight = height;
 		
 		YAHOO.util.Dom.get('imageContainer').innerHTML = '<img id="yuiImg" src="images/' + image + '" width="' + width + '" height="' + height + '" alt="" style="width:' + width + 'px;height:' + height + 'px;" />';
-		
+		var dd1 = new YAHOO.util.DD("yuiImg");
+
 		// add it to our history
 		var imageObject = new Object;
 		imageObject.image = image;
